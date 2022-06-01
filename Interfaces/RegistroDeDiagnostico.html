@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+ <title> Taller Hermanos Blanco</title>
+
+ 
+ <!-- Pura Configuracion no es necesario que se cierre como las etiquetas -->
+ <title> Practica3</title>
+ <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
+ <link type="text/css" rel="stylesheet" href="bootstrap/css/bootstrap.css">
+ <script src="bootstrap/js/bootstrap.js"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+ 
+</head>
+   
+<!-- Sidebar -->
+     <div id="wrapper">                         
+          <div id="sidebar-wrapper">
+              <ul class="sidebar-nav">
+                <img src="imagenes/LogoH.png" alt="Logo Taller" class="img-responsive">
+                <li class="sidebar-brand"> Taller Hermanos Blanco</li>
+                <li><a href="#">Principal</a></li>
+                  <div class="panela2">
+                    <li><a href="Personal.html">Personal</a></li>
+                    <li><a href="Cita.html">Citas</a></li>
+                    <li><a href="Clientes.html">Clientes</a></li>
+                    <li><a href="Vehiculos.html">Vehiculos</a></li>
+                    <li><a href="Diagnostico.html">Diagnosticos</a></li>
+                    
+                  </div>
+              </ul>
+          </div>
+          <!-- /#sidebar-wrapper -->
+  
+          
+         
+          
+
+         <!--Inicia Navbar Header -->
+          <nav class="navbar navbar-default">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                
+              </div>
+              <!--Boton De Menu -->
+              <button type="button" href="#menu-toggle" class="btn btn-default" id="menu-toggle">
+              <span class="glyphicon glyphicon-tasks"> Menu</span>
+              </button>
+              <!-- termina Boton De Menu -->
+              <ul class="nav navbar-nav navbar-right">
+                <a class="navbar-brand " href="#">Gerardo Ibarra</a>  
+                <li>  <button type="button"  class="btn btn-default" id="usuario">
+                <img src="iconos/avatar.png" alt="usuario" height="30" width="30">
+                 </button></li>
+
+                <li>  <button type="button"  class="btn btn-default" id="configuraciones">
+                    <img src="iconos/configuraciones.png" height="30" width="30">
+                  </button></li>
+
+                <li>  <button type="button"  class="btn btn-default" id="cerrarSesion">
+                 <img src="iconos/logout.png" height="30" width="30">
+                  </button></li>
+               
+                  
+              </ul>
+            </div>
+          </nav>
+            
+        <!--Termina Navbar Header -->
+               
+        <!--Inicia Header -->
+             
+    <h1>Registro de Diagnostico</h1> 
+    <form action="#"  class="form">  
+        
+          
+          <!-- Progress bar -->
+          <div class="progressbar">
+            <div class="progress" id="progress"></div>
+            <div class="progress-step progress-step-active"></div>
+            <div class="progress-step" ></div>
+            <div class="progress-step" ></div>
+            <div class="progress-step" ></div>
+            <div class="progress-step" ></div>
+          </div>
+          <!-- Steps --> 
+          
+          <div class="form-step form-step-active">
+            <div>
+              <table align="center">
+              <tr>
+              <div class="input-group">  
+                  <td><label for="username">Id Cliente :  </label></td>
+                  <td><input type="text"  id="username"></td>
+              </div>
+              <div class="input-group">
+                  <td><label for="position">Id Vehiculo : </label></td>
+                  <td><input type="password"  id="position"></td>
+              </div>
+            </tr>
+              <tr>
+              <div class="input-group" >
+                  <td><label for="username">Placa :  </label></td>
+                  <td><input type="text"  id="username"></td>
+              </div>
+              <div class="input-group">
+                  <td><br><label for="position">Serie : </label></td>
+                  <td><input type="password"  id="position"></td>
+              </div>
+              </tr>
+              <tr>
+              <div class="input-group" >
+                  <td><label for="username">Tecnico :  </label></td>
+                  <td><input type="text"  id="username"></td>
+              </div>
+              <div class="input-group">
+                  <td><br><label for="position">Fecha de Diagnostico : </label></td>
+                  <td><input type="date"  id="position"></td>
+              </div>
+              </tr>
+              <tr>
+            <div class="">
+              <td><a href="#" class="btn btn-next width-50 ml-auto">Next</a></td>
+            </div>
+              </tr>
+          </table>
+        </div>
+        </form>
+          </div>
+        
+          <div class="form-step">
+            <div class="input-group">
+              <label for="phone">Luces</label>
+              <input type="radio"/>
+            </div>
+            <div class="input-group">
+              <label for="email">Bateria</label>
+              <input type="radio"/>
+            </div>
+            <div class="input-group">
+              <label for="email">Limpia Parabrisas</label>
+              <input type="radio"/>
+            </div>
+            <div class="input-group">
+              <label for="email">Caja de fusibles</label>
+              <input type="radio"/>
+            </div>
+            <div class="btns-group">
+              <a href="#" class="btn btn-prev">Previous</a>
+              <a href="#" class="btn btn-next">Next</a>
+            </div>
+          </div>
+          <div class="form-step">
+            <div class="input-group">
+              <label for="dob">Fecha</label>
+              <input type="date" name="dob" id="dob" />
+            </div>
+            <div class="input-group">
+              <label for="ID">ID</label>
+              <input type="number" name="ID" id="ID" />
+            </div>
+            <div class="btns-group">
+              <a href="#" class="btn btn-prev">Previous</a>
+              <a href="#" class="btn btn-next">Next</a>
+            </div>
+          </div>
+          <div class="form-step">
+            <div class="input-group">
+              <label for="password">Contraseña</label>
+              <input type="password" name="password" id="password" />
+          </div>
+            <div class="input-group">
+              <label for="confirmPassword">Confirmar Contraseña</label>
+              <input
+                type="password"
+                name="confirmPassword"
+                id="confirmPassword"
+              />
+            </div> 
+              <div class="btns-group">
+                <a href="#" class="btn btn-prev">Previous</a>
+                <a href="#" class="btn btn-next">Next</a>
+              </div>
+            </div>
+            <div class="form-step">
+              <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" />
+              </div>
+              <div class="input-group">
+                <label for="confirmPassword">Confirm Password</label>
+                <input
+                  type="password"
+                  name="confirmPassword"
+                  id="confirmPassword"
+                />
+              </div>
+              <div class="btns-group">
+              <a href="#" class="btn btn-prev">Previous</a>
+              <input type="submit" value="Submit" class="btn" />
+            </div>
+          </div>
+                <!--Fin Header -->
+
+                <!-- Inicio Container-->
+
+          <!-- Fin Container-->
+
+                          <!--<a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Menu</a> -->
+                
+          
+
+          <!-- /#page-content-wrapper -->
+   <!-- /#wrapper -->
+     <!-- Menu Toggle Script -->
+  
+     <script>
+      $("#menu-toggle").click(function(e) {
+          e.preventDefault();
+          $("#wrapper").toggleClass("toggled");
+      });
+      </script>
+   
+
+   <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+    
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        } 
+      });
+    }
+    </script>
+ 
+   
+</body>
+</html> 

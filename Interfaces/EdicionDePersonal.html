@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+ <title> Taller Hermanos Blanco</title>
+
+ 
+ <!-- Pura Configuracion no es necesario que se cierre como las etiquetas -->
+ <title> Practica3</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
+ <link type="text/css" rel="stylesheet" href="bootstrap/css/bootstrap.css">
+ <script src="bootstrap/js/bootstrap.js"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+ 
+</head>
+   
+<!-- Sidebar -->
+     <div id="wrapper">                         
+          <div id="sidebar-wrapper">
+              <ul class="sidebar-nav">
+                <img src="imagenes/LogoH.png" alt="Logo Taller" class="img-responsive">
+                <li class="sidebar-brand"> Taller Hermanos Blanco</li>
+                <li><a href="#">Principal</a></li>
+                  <div class="panela2">
+                    <li><a href="Personal.html">Personal</a></li>
+                    <li><a href="Cita.html">Citas</a></li>
+                    <li><a href="Clientes.html">Clientes</a></li>
+                    <li><a href="Vehiculos.html">Vehiculos</a></li>
+                    <li><a href="Diagnostico.html">Diagnosticos</a></li>
+                  </div>
+              </ul>
+          </div>
+          <!-- /#sidebar-wrapper -->
+  
+          
+         
+          
+
+         <!--Inicia Navbar Header -->
+          <nav class="navbar navbar-default">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                
+              </div>
+              <!--Boton De Menu -->
+              <button type="button" href="#menu-toggle" class="btn btn-default" id="menu-toggle">
+              <span class="glyphicon glyphicon-tasks"> Menu</span>
+              </button>
+              <!-- termina Boton De Menu -->
+              <ul class="nav navbar-nav navbar-right">
+                <a class="navbar-brand " href="#">Gerardo Ibarra</a>  
+                <li>  <button type="button"  class="btn btn-default" id="usuario">
+                <img src="iconos/avatar.png" alt="usuario" height="30" width="30">
+                 </button></li>
+
+                <li>  <button type="button"  class="btn btn-default" id="configuraciones">
+                    <img src="iconos/configuraciones.png" height="30" width="30">
+                  </button></li>
+
+                <li>  <button type="button"  class="btn btn-default" id="cerrarSesion">
+                 <img src="iconos/logout.png" height="30" width="30">
+                  </button></li>
+               
+                  
+              </ul>
+            </div>
+          </nav>
+            
+        <!--Termina Navbar Header -->
+               
+        <!--Inicia Header -->
+             
+               <div class="container-fluid">
+                    <div class="jumbotron">
+                      <h1>Edicion De Personal</h1>   
+
+                      <div>
+                          <img <img src="./iconos/avatar.png" height ="50" width="50" > 
+                          <button>Cambiar imagen</button>
+                          <h3>Nombre:</h3>
+                          <input type="text">
+                          <h3>Apellido Paterno:</h3>
+                          <input type="text">
+                          <h3>Apellido Materno:</h3>
+                          <input type="text">
+                          <h3>Numero de telefono:</h3>
+                          <input type="text">
+                          <h3>Numero de seguro social:</h3>
+                          <input type="text">
+                          <h3>Correo Electronico:</h3>
+                          <input type="text">
+                          <button>Editar datos</button>
+                          <button>Cancelar</button>
+                      </div>
+                    
+                    </div>   
+                  </div>
+
+                <!--Fin Header -->
+
+                <!-- Inicio Container-->
+                
+         
+             
+                
+
+
+
+          <!-- Fin Container-->
+
+                          <!--<a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Menu</a> -->
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          
+
+          <!-- /#page-content-wrapper -->
+   <!-- /#wrapper -->
+     <!-- Menu Toggle Script -->
+  
+     <script>
+      $("#menu-toggle").click(function(e) {
+          e.preventDefault();
+          $("#wrapper").toggleClass("toggled");
+      });
+      </script>
+   
+
+   <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+    
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        } 
+      });
+    }
+    </script>
+ 
+   
+</body>
+</html> 
