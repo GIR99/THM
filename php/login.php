@@ -13,10 +13,10 @@
 <body>
 
 
-    <div id="container" class="img-responsive" style="background-image: url('./imagenes/Login.jpg');  background-repeat: no-repeat; background-size: cover; background-position: center center; height: 100vh;">
+    <div id="container" class="img-responsive" style="background-image: url('../imagenes/Login.jpg');  background-repeat: no-repeat; background-size: cover; background-position: center center; height: 100vh;">
 
     <h1 align="center">Taller Hermanos Blanco</h1>
-    <form method="Post" action="vlogin.php">
+    <form method="Post" action="../php/vlogin.php">
     
         <table align="center" class="table">
             <tr><td>Nombre<td><td><input type="text" placeholder="Usuario"name="nom"></td></tr>

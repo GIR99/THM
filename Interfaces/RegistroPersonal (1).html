@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+ <title> Taller Hermanos Blanco</title>
+
+ 
+ <!-- Pura Configuracion no es necesario que se cierre como las etiquetas -->
+ <title> Practica3</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
+ <link type="text/css" rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+ <script src="../bootstrap/js/bootstrap.js"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+ 
+</head>
+   
+<!-- Sidebar -->
+     <div id="wrapper">                         
+          <div id="sidebar-wrapper">
+              <ul class="sidebar-nav">
+                <img src="../imagenes/LogoH.png" alt="Logo Taller" class="img-responsive">
+                <li class="sidebar-brand"> Taller Hermanos Blanco</li>
+                <li><a href="#">Principal</a></li>
+                  <div class="panela2">
+                    <li><a href="Personal.html">Personal</a></li>
+                    <li><a href="Cita.html">Citas</a></li>
+                    <li><a href="Clientes.html">Clientes</a></li>
+                    <li><a href="Vehiculos.html">Vehiculos</a></li>
+                    <li><a href="Diagnostico.html">Diagnosticos</a></li>
+                  </div>
+              </ul>
+          </div>
+          <!-- /#sidebar-wrapper -->
+  
+          
+         
+          
+
+         <!--Inicia Navbar Header -->
+          <nav class="navbar navbar-default">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                
+              </div>
+              <!--Boton De Menu -->
+              <button type="button" href="#menu-toggle" class="btn btn-default" id="menu-toggle">
+              <span class="glyphicon glyphicon-tasks"> Menu</span>
+              </button>
+              <!-- termina Boton De Menu -->
+              <ul class="nav navbar-nav navbar-right">
+                <a class="navbar-brand " href="#">Gerardo Ibarra</a>  
+                <li>  <button type="button"  class="btn btn-default" id="usuario">
+                <img src="../iconos/avatar.png" alt="usuario" height="30" width="30">
+                 </button></li>
+
+                <li>  <button type="button"  class="btn btn-default" id="configuraciones">
+                    <img src="../iconos/configuraciones.png" height="30" width="30">
+                  </button></li>
+
+                <li>  <button type="button"  class="btn btn-default" id="cerrarSesion">
+                 <img src="../iconos/logout.png" height="30" width="30">
+                  </button></li>
+               
+                  
+              </ul>
+            </div>
+          </nav>
+            
+        <!--Termina Navbar Header -->
+
+        <div class="progressbar">
+          <div class="progress" id="progress"></div>
+          <div class="progress-step progress-step-active"></div>
+          <div class="progress-step" ></div>
+          <div class="progress-step" ></div>
+        </div>
+
+        <div class="form-step form-step-active">
+        <div class="container-fluid">
+          <div class="jumbotron">
+            <h2>Registro De Personal</h2> 
+            <form method="post" action="../php/gpersonal.php">  
+
+            <div class="form-step form-step-active">
+              <div>
+                <table align="center">
+                <tr>
+                <div class="input-group">  
+                    <td><label for="username">Nombre :  </label></td>
+                    <td><input type="text"  name="nom"></td>
+                </div>
+                <div class="input-group">
+                    <td><label for="position">Primer Apellido: </label></td>
+                    <td><input type="text"  name="apell1"></td>
+                </div>
+              </tr>
+                <tr>
+                <div class="input-group" >
+                    <td><label for="username">Segundo Apellido:  </label></td>
+                    <td><input type=""  name="apell2"></td>
+                </div>
+                <div class="input-group">
+                    <td><br><label for="position">Edad: </label></td>
+                    <td><input type=int  name="edad"></td>
+                </div>
+                </tr>
+                <tr>
+                <div class="input-group" >
+                    <td><label for="username">Sexo :  </label></td>
+                    <td><input type="text"  id="sexo"></td>
+                </div>
+                <div class="input-group">
+                    <td><br><label for="position">Calle: </label></td>
+                    <td><input type="text"  name="calle"></td>
+                </div>
+                </tr>
+                <tr>
+                  <div class="input-group">
+                      <td><br><label for="position"> Número Interior : </label></td>
+                      <td><input type="text"  name="nint"></td>
+                  </div>
+                  <div class="input-group">
+                      <td><br><label for="position">Número Exterior : </label></td>
+                      <td><input type="text"  name="next"></td>
+                  </div>
+                </tr>
+                <tr>
+                  <div class="input-group">
+                      <td><br><label for="position">Colonia : </label></td>
+                      <td><input type="text"  name="col"></td>
+                  </div>
+                  <div class="input-group">
+                      <td><br><label for="position">Municipio : </label></td>
+                      <td><input type="text"  name="mun"></td>
+                  </div>
+                </tr>
+                <tr>
+                  <div class="input-group">
+                    <td><br><label for="position">Estado : </label></td>
+                    <td><input type="text"  name="edo"></td>
+                </div>
+                  <div class="input-group">
+                      <td><br><label for="position"> Cp : </label></td>
+                      <td><input type="text"  name="cp"></td>
+                  </div>
+                  
+                </tr>
+                <tr>
+                  <div class="input-group">
+                    <td><br><label for="position">Correo Electrónico : </label></td>
+                    <td><input type="text"  name="correl"></td>
+                </div>
+                  </tr>
+            </table>
+            <td><a href="#" class="btn btn-next width-50 ml-auto">Next</a></td>
+            
+          </div>
+          </form>
+            </div>
+            </div>
+          
+          </div>   
+        </div>
+
+
+
+        <script>
+            $("#menu-toggle").click(function(e) {
+                e.preventDefault();
+                $("#wrapper").toggleClass("toggled");
+            });
+            </script>
+         
+      
+         <script>
+          var acc = document.getElementsByClassName("accordion");
+          var i;
+          
+          for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+              this.classList.toggle("active");
+              var panel = this.nextElementSibling;
+              if (panel.style.maxHeight) {
+                panel.style.maxHeight = null;
+              } else {
+                panel.style.maxHeight = panel.scrollHeight + "px";
+              } 
+            });
+          }
+          </script>
+       
+         
+      </body>
+      </html> 
